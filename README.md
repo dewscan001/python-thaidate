@@ -2,6 +2,10 @@
 
 ## Status : Alpha-0.0.10
 
+## Installation
+```
+    pip install thaidate
+```
 ## Usage
 
 ```
