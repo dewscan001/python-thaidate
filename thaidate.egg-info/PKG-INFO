@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: thaidate
-Version: 0.0.10
+Version: 0.0.15
 Summary: python-thaidate
 Home-page: UNKNOWN
 Author: DewBloodmetal
@@ -8,8 +8,12 @@ Author-email: dewscan001@gmail.com
 License: DewBloodmetal
 Description: # Project Thaidate 
         
-        ## Status : Alpha-0.0.10
+        ## Status : Alpha-0.0.15
         
+        ## Installation
+        ```
+            pip install thaidate
+        ```
         ## Usage
         
         ```

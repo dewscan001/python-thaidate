@@ -1,6 +1,6 @@
 README.md
 setup.py
-thaidate.py
+thaidate.pyx
 thaidate.egg-info/PKG-INFO
 thaidate.egg-info/SOURCES.txt
 thaidate.egg-info/dependency_links.txt

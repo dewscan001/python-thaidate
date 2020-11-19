@@ -5,13 +5,13 @@ def readme():
         return f.read()
 
 setup(name='thaidate',
-    version='0.0.10',
+    version='0.0.15',
     description='python-thaidate',
     author='DewBloodmetal',
     author_email='dewscan001@gmail.com',
     license='DewBloodmetal',
-    install_requires=[],
-    scripts=['thaidate.py'],
+    install_requires=[''],
+    scripts=['thaidate.pyx'],
     keywords='python thaidate python-thaidate',
     long_description=readme(),
     long_description_content_type='text/markdown'
