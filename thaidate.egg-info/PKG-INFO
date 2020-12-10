@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: thaidate
-Version: 0.0.15
+Version: 0.1.0
 Summary: python-thaidate
 Home-page: UNKNOWN
 Author: DewBloodmetal
@@ -8,7 +8,7 @@ Author-email: dewscan001@gmail.com
 License: DewBloodmetal
 Description: # Project Thaidate 
         
-        ## Status : Alpha-0.0.15
+        ## Status : Alpha-0.1.0
         
         ## Installation
         ```
@@ -52,7 +52,7 @@ Description: # Project Thaidate
         ```
         
         ## Chengelog
-        alpha-0.0.10
+        alpha-0.1.0
         - เพิ่มแอททริบิวต์สำหรับแสดง วันในสัปดาห์ วันที่ เดือน ปี
         - เพิ่มเมธอด สำหรับแสดงวัน เดือน ปี ในรูปแบบเต็ม
 Keywords: python thaidate python-thaidate

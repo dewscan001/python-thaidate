@@ -1,6 +1,6 @@
 # Project Thaidate 
 
-## Status : Alpha-0.0.15
+## Status : Alpha-0.1.0
 
 ## Installation
 ```
@@ -44,6 +44,6 @@ print(x.rattanakosin_era)   # x.rattanakosin_era  แสดงปี ร.ศ.
 ```
 
 ## Chengelog
-alpha-0.0.10
+alpha-0.1.0
 - เพิ่มแอททริบิวต์สำหรับแสดง วันในสัปดาห์ วันที่ เดือน ปี
 - เพิ่มเมธอด สำหรับแสดงวัน เดือน ปี ในรูปแบบเต็ม
