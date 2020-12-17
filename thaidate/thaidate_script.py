@@ -62,9 +62,17 @@ class thaidate:
         date_week_day = date(int(self.value_date[2]), int(self.value_date[1]), int(self.value_date[0]))
         return weekDays[date_week_day.weekday() - 1]
     
+    @property
+    def date(self):
+        return f'{self.day} {self.full_month} {self.year}'
     
+    @property
+    def short_date(self):
+        return f'{self.day} {self.short_month} {self.year}'
+    
+    @property
     def full_date(self):
-        return "{0}ที่ {1} เดือน{2} ปีพุทธศักราช {3}".format(self.weekday, self.day, self.full_month, self.year)
+        return f'วัน{self.weekday}ที่ {self.day} เดือน{self.full_month} ปีพุทธศักราช {self.year}'
     
     @property
     def rattanakosin_era(self):

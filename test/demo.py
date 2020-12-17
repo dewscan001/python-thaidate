@@ -22,7 +22,7 @@ print(x.short_month)        # x.short_month แสดงเดือนแบบ
 print(x.year)               # x.year แสดงปี พ.ศ.
 print(x.weekday)            # x.weekday แสดงวันในสัปดาห์
 
-print(x.full_date())        # x.full_date()  แสดงวัน เดือน ปี ในรูปแบบเต็ม 
+print(x.full_date)        # x.full_date  แสดงวัน เดือน ปี ในรูปแบบเต็ม 
 #วัน.......ที่ ..... เดือน...... ปีพุทธศักราช ......
 
 print(x.rattanakosin_era)   # x.rattanakosin_era  แสดงปี ร.ศ.

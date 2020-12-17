@@ -5,13 +5,18 @@ def readme():
         return f.read()
 
 setup(name='thaidate',
+    packages=['thaidate'],
     version='0.1.0',
     description='python-thaidate',
     author='DewBloodmetal',
     author_email='dewscan001@gmail.com',
-    license='DewBloodmetal',
     install_requires=[''],
     keywords='python thaidate python-thaidate',
     long_description=readme(),
-    long_description_content_type='text/markdown'
+    long_description_content_type='text/markdown',
+    classifiers=[
+          'Development Status :: 3 - Alpha',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 3'
+      ], 
 )
