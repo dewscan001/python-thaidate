@@ -6,7 +6,7 @@ def readme():
 
 setup(name='thaidate',
     packages=['thaidate'],
-    version='0.1.4',
+    version='0.1.5',
     description='python-thaidate',
     author='DewBloodmetal',
     author_email='dewscan001@gmail.com',
