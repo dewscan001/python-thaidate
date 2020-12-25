@@ -16,15 +16,12 @@ from datetime import date
     thaidate('วัน เดือน ปี', True/False) หรือ thaidate('ปี เดือน วัน', True/False)
     ex1: 
         ใช้เมื่อปี คือ พ.ศ. เช่น วันที่ 1 เดือนกุมภาพันธ์ ปี พ.ศ. 5
-        x = thaidate('1 2 5', True)
         x = thaidate(date(5 2 1), True) 
         
     ex2: 
         ใช้เมื่อปี คือ ค.ศ. เช่น วันที่ 1 เดือนกุมภาพันธ์ ปี ค.ศ. 5
-        x = thaidate('1 2 5', False) 
         x = thaidate(date(5 2 1), False) 
         หรือ
-        x = thaidate('1 2 5')
         x = thaidate(date(5 2 1))
         
     ex3:
@@ -52,7 +49,13 @@ print(x.rattanakosin_era)   # x.rattanakosin_era  แสดงปี ร.ศ.
 
 ## Chengelog
 ```
-0.1.0
+0.1.4 
+- แก้ไข bug แสดงผลไม่ถูกต้อง
+
+
+ตั้งแต่เวอร์ชัน 0.1.0 ลงไป มีบัคการแสดงผลไม่ถูกต้อง ควรใช้ เวอร์ชัน 0.1.4 ขึ้นไป
+
+0.1.0  
 - เปลี่ยนวิธีการแสดงผลวัน วันที่ เดือน ปี ในรูปแบบเต็ม จากเดิมต้องเรียกในรูปแบบเมธอด [x.full_date()] เป็น [x.full_date] ได้เลย
 - เพิ่มแอททริบิวต์สำหรับแสดงวันที่ เดือน ปี 
        [x.date] =>  [x.day] [x.full_month] [x.year]
