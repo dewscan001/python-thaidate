@@ -13,7 +13,7 @@ from thaidate import thaidate
 from datetime import date
 
 '''
-    thaidate('วัน เดือน ปี', True/False) หรือ thaidate('ปี เดือน วัน', True/False)
+    thaidate(date(ปี, เดือน, วัน, True/False)
     ex1: 
         ใช้เมื่อปี คือ พ.ศ. เช่น วันที่ 1 เดือนกุมภาพันธ์ ปี พ.ศ. 5
         x = thaidate(date(5 2 1), True) 
