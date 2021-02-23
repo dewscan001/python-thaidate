@@ -26,10 +26,12 @@ print(x.short_month)        # x.short_month แสดงเดือนแบบ
 print(x.year)               # x.year แสดงปี พ.ศ.
 print(x.weekday)            # x.weekday แสดงวันในสัปดาห์ เช่น วันอาทิตย์
 
-print(x.date)               # x.date แสดงวันที่ เดือน ปีพุทธศักราช เช่น 5 พฤศจิกายน 2536
-print(x.short_date)         # x.date แสดงวันที่ เดือน ปีพุทธศักราช เช่น 5 พ.ย. 2536
+# x.date แสดงวันที่ เดือน ปีพุทธศักราช เช่น 5 พฤศจิกายน 2536
+print(x.date)
+# x.date แสดงวันที่ เดือน ปีพุทธศักราช เช่น 5 พ.ย. 2536
+print(x.short_date)
 
-print(x.full_date)          # x.full_date  แสดงวัน เดือน ปี ในรูปแบบเต็ม 
-#วัน.......ที่ ..... เดือน...... ปีพุทธศักราช ...... 
+print(x.full_date)          # x.full_date  แสดงวัน เดือน ปี ในรูปแบบเต็ม
+# วัน.......ที่ ..... เดือน...... ปีพุทธศักราช ......
 
 print(x.rattanakosin_era)   # x.rattanakosin_era  แสดงปี ร.ศ.
