@@ -1,3 +1,3 @@
-from thaidate.thaidate_script import thaidate
+from thaidate.thaidate_script import thaidate, thaidatetime
 
-__all__ = ['thaidate']
+__all__ = ['thaidate', 'thaidatetime']

@@ -8,7 +8,7 @@ def readme():
 
 setup(name='thaidate',
       packages=['thaidate'],
-      version='0.1.5',
+      version='0.2.2',
       description='python-thaidate',
       author='DewBloodmetal',
       author_email='dewscan001@gmail.com',
@@ -19,6 +19,6 @@ setup(name='thaidate',
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 3'
+          'Programming Language :: Python :: 3.9'
       ],
       )
