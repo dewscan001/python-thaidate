@@ -3,6 +3,8 @@ from datetime import date, datetime
 
 class thaidate:
 
+    __slots__ = ['value', 'Buddhist', 'value_date']
+
     def __init__(self, value: date = None, Buddhist: bool = False) -> None:
         self.value: date = value
         self.Buddhist: bool = Buddhist
@@ -87,6 +89,7 @@ class thaidate:
     
     
 class thaidatetime(thaidate):
+    __slots__ = ['value', 'Buddhist', 'value_date', 'value_time']
     
     def __init__(self, value: datetime = None, Buddhist: bool = False) -> None:
         self.value: date = value

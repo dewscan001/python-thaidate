@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: thaidate
-Version: 0.2.2
+Version: 0.2.5
 Summary: python-thaidate
 Home-page: UNKNOWN
 Author: DewBloodmetal
@@ -67,6 +67,9 @@ Description: # Project Thaidate
         
         ## Changelog
         ```
+        0.2.5
+        - เพิ่มประสิทธิภาพการใช้แรม
+        
         0.2.2
         - เพิ่ม การแสดงวันและเวลา โดยใช้คำสั่ง x = thaidatetime() [ถ้าหากต้องการแสดงแค่รูปแบบวัน ไม่รวมเวลา ให้ใช้คำสั่ง x = thaidate() ตามเดิม]
         
