@@ -8,7 +8,7 @@ def readme():
 
 setup(name='thaidate',
       packages=['thaidate'],
-      version='0.2.5',
+      version='0.3.0',
       description='python-thaidate',
       author='DewBloodmetal',
       author_email='dewscan001@gmail.com',

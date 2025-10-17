@@ -9,10 +9,13 @@ class thaidate:
         self.value: date = value
         self.Buddhist: bool = Buddhist
         self.value_date: list = []
-        self.check_value()
         self.check_value_date()
+        if int(self.value_date[2]) < int(self.value_date[0]):
+            self.value_date.reverse()
+        if self.Buddhist == False:
+            self.value_date[2] = int(self.value_date[2])+543
 
-    def check_value(self) -> None:
+    def check_value_date(self) -> None:
         if self.value in (None, ''):
             self.value = date.today()
 
@@ -35,12 +38,6 @@ class thaidate:
 
         except Exception as error:
             print('Caught this error: ' + repr(error))
-
-    def check_value_date(self) -> None:
-        if int(self.value_date[2]) < int(self.value_date[0]):
-            self.value_date.reverse()
-        if self.Buddhist == False:
-            self.value_date[2] = int(self.value_date[2])+543
 
     @property
     def day(self) -> int:
@@ -96,21 +93,26 @@ class thaidatetime(thaidate):
         self.Buddhist: bool = Buddhist
         self.value_date: list = []
         self.value_time: list = []
-        self.check_value()
-        self.check_value_date()
+        self.check_value_datetime()
+        print(self.value_date)
+        if int(self.value_date[2]) < int(self.value_date[0]):
+            self.value_date.reverse()
+        if self.Buddhist == False:
+            self.value_date[2] = int(self.value_date[2])+543
         
-    def check_value(self) -> None:
+    def check_value_datetime(self) -> None:
         if self.value in (None, ''):
             self.value = datetime.now()
 
         if isinstance(self.value, datetime):
             self.value_date = self.value.strftime('%Y %m %d %H %M %S').split()[:3]
             self.value_time = self.value.strftime('%Y %m %d %H %M %S').split()[3:6]
+        elif isinstance(self.value, date):
+            raise Exception(
+                        'คุณใส่ argument ผิด หากคุณต้องการใช้ class thaidatetime() คุณต้องใส่ argument เป็น class datetime() หรือ string ตาม format ที่กำหนดไว้เท่านั้น')
         else:
             self.check_str_datetime()
             
-        print(self.value_date[0], self.value_date[2])   
-          
     def check_str_datetime(self) -> None:
         datetime : list = []
         try:
@@ -121,17 +123,22 @@ class thaidatetime(thaidate):
                     self.value_date = datetime[0].split('/')
                 elif '-' in datetime[0]:
                     self.value_date = datetime[0].split('-')
+                elif ' ' in datetime[0]:
+                    self.value_date = datetime[0].split()
                 else:
                     raise Exception(
-                        'คุณต้องกำหนดข้อมูลให้อยู่รูปแบบ yyyy mm dd, yyyy-mm-dd, yyyy/mm/dd เท่านั้น')
-                    
-                self.value_time = datetime[1:]
+                        'คุณต้องกำหนดข้อมูลให้อยู่รูปแบบ yyyy mm dd HH:MM:SS, yyyy-mm-dd HH:MM:SS, yyyy/mm/dd HH:MM:SS เท่านั้น')
+
+                if ':' in datetime[1]:
+                    self.value_time = datetime[1].split(":")
+                else:
+                    raise Exception(
+                        'คุณต้องกำหนดข้อมูลให้อยู่รูปแบบ yyyy mm dd HH:MM:SS, yyyy-mm-dd HH:MM:SS, yyyy/mm/dd HH:MM:SS เท่านั้น')
                 
             else:
                 self.value_date = datetime[:3]
                 self.value_time = datetime[3:6]
                 
-            print(self.value_date, self.value_time)
         except Exception as error:
             print('Caught this error: ' + repr(error))
             
