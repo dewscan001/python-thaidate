@@ -94,7 +94,6 @@ class thaidatetime(thaidate):
         self.value_date: list = []
         self.value_time: list = []
         self.check_value_datetime()
-        print(self.value_date)
         if int(self.value_date[2]) < int(self.value_date[0]):
             self.value_date.reverse()
         if self.Buddhist == False:
